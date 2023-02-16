@@ -1,5 +1,6 @@
 @import url("fonts.css");
 @import url("button.css");
+@import url("colors.css");
 
 nav {
   padding: 26px 0;
@@ -25,16 +26,98 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   color: white;
-  height: 90vh;
+  height: 80vh;
   display: flex;
   align-items: center;
 }
 
 header h1 {
-  max-width: 50%;
   line-height: 150%;
 }
 
-header p {
-  max-width: 50%;
+/* main */
+main .desc {
+  margin-top: 6vh;
+}
+
+ul.activity-list {
+  padding-left: 0;
+}
+
+ul.activity-list li {
+  list-style: none;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  margin-top: 20px;
+  padding-left: 45px;
+  position: relative;
+}
+
+ul.activity-list li::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  transform: translateY(-50%);
+  background-image: url("../images/checklist.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* footer */
+footer {
+  background-color: var(--dark-blue);
+  padding-top: 40px;
+}
+
+footer .footer-list-item {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+footer .footer-list-item > li {
+  margin-top: 7px;
+}
+
+footer .footer-list-item > li > a {
+  text-decoration: none;
+  color: var(--gray2);
+}
+
+footer .footer-item-container {
+  gap: 20px;
+}
+
+footer .gmaps {
+  width: 100%;
+  height: 50vh;
+}
+
+footer .copyright {
+  background-color: #0a2f33;
+  text-align: center;
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  header h1 {
+    max-width: 50%;
+  }
+
+  header p {
+    max-width: 50%;
+  }
+
+  main .desc {
+    margin-top: 23vh;
+  }
+
+  footer .footer-item-container {
+    gap: 60px;
+  }
 }

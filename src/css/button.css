@@ -11,6 +11,29 @@
   transition: 0.3s;
 }
 
+.social-media {
+  border: none;
+  width: 43px;
+  height: 43px;
+  border-radius: 8px;
+  font-size: 20px;
+}
+
+.facebook {
+  background-color: var(--facebook);
+  color: white;
+}
+
+.instagram {
+  background-color: var(--instagram);
+  color: white;
+}
+
+.twitter {
+  background-color: var(--twitter);
+  color: white;
+}
+
 .button-primary {
   background-color: var(--primary);
   color: white;
