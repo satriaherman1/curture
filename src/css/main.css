@@ -1,0 +1,40 @@
+@import url("fonts.css");
+@import url("button.css");
+
+nav {
+  padding: 26px 0;
+  position: fixed;
+  width: 100vw;
+}
+
+nav ul {
+  column-gap: 40px;
+}
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+header {
+  background-image: url("../images/bg1.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+}
+
+header h1 {
+  max-width: 50%;
+  line-height: 150%;
+}
+
+header p {
+  max-width: 50%;
+}
