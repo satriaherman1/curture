@@ -2,10 +2,16 @@
 @import url("button.css");
 @import url("colors.css");
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 nav {
-  padding: 26px 0;
+  padding: 20px 0;
   position: fixed;
   width: 100vw;
+  z-index: 999;
 }
 
 nav ul {
@@ -16,19 +22,45 @@ nav ul li {
 }
 
 nav ul li a {
-  color: white;
   text-decoration: none;
 }
 
+.small-nav {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: -100vh;
+  left: 0;
+  transition: 0.3s;
+  background-color: white;
+  z-index: 998;
+}
+
+.small-nav > .small-nav-item {
+  padding: 20px 23px;
+}
+
+.small-nav > .small-nav-item:first-child {
+  border-top: 1.4px solid var(--line1);
+}
+
+.small-nav > .small-nav-item:hover {
+  background-color: var(--primary-light);
+}
+
+.small-nav > .small-nav-item:hover > a {
+  color: var(--primary);
+}
+
+.small-nav > .small-nav-item > a {
+  text-decoration: none;
+  color: #0a2f33;
+}
+
+/* header */
+
 header {
-  background-image: url("../images/bg1.jpeg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: white;
-  height: 80vh;
-  display: flex;
-  align-items: center;
+  padding: 10vh 0;
 }
 
 header h1 {
@@ -38,6 +70,36 @@ header h1 {
 /* main */
 main .desc {
   margin-top: 6vh;
+}
+
+.sponsorship-wrapper {
+  position: relative;
+  width: 100vw;
+  overflow-x: hidden;
+}
+.sponsorship {
+  /* animation: moveToLeft 9s linear infinite; */
+}
+
+@keyframes moveToLeft {
+  0% {
+    margin-left: 0;
+  }
+  50% {
+    margin-left: -100vw;
+  }
+  80% {
+    margin-left: 100%;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
+
+.statistic {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 ul.activity-list {
@@ -105,14 +167,9 @@ footer .copyright {
 }
 
 @media screen and (min-width: 768px) {
-  header h1 {
-    max-width: 50%;
+  nav {
+    padding: 26px 0;
   }
-
-  header p {
-    max-width: 50%;
-  }
-
   main .desc {
     margin-top: 23vh;
   }

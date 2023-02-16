@@ -9,6 +9,7 @@
   font-size: 20px;
   letter-spacing: 3% !important;
   transition: 0.3s;
+  width: fit-content;
 }
 
 .social-media {
@@ -42,4 +43,47 @@
 .button-primary:hover {
   background-color: var(--primary-hover);
   transform: translateY(-20%);
+}
+
+.button-drawer {
+  background: none;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  transition: 0.3s;
+}
+
+.button-drawer > span {
+  background-color: var(--primary);
+  height: 3px;
+  display: block;
+  margin-left: auto;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.button-drawer span:first-child {
+  width: 27px;
+}
+.button-drawer span:nth-child(2) {
+  width: 20px;
+}
+.button-drawer span:last-child {
+  width: 32px;
+}
+
+.button-drawer.active > span:first-child {
+  margin-top: 8px;
+  width: 32px;
+  transform: rotate(45deg) translateY(200%);
+}
+.button-drawer.active > span:nth-child(2) {
+  display: none;
+}
+
+.button-drawer.active > span:last-child {
+  width: 32px;
+  transform: rotate(-45deg) translateY(-200%);
 }
