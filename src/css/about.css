@@ -12,6 +12,36 @@ header {
   margin-top: 100px;
 }
 
+.vision-mission ul {
+  padding-left: 0;
+}
+
+.vision-mission ul li {
+  list-style: none;
+  display: flex;
+  align-items: start;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.vision-mission ul li img {
+  display: inline-block;
+}
+
+.vision-mission > div {
+  flex-basis: 50%;
+  padding: 20px;
+}
+
+.vision {
+  background-color: #f2f4f5;
+}
+
+.mission {
+  background-color: var(--dark-blue);
+  color: white;
+}
+
 @media screen and (min-width: 768px) {
   header .img1 {
     margin-top: 100px;
