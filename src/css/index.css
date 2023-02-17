@@ -1,63 +1,9 @@
 @import url("fonts.css");
 @import url("button.css");
 @import url("colors.css");
-
-html,
-body {
-  overflow-x: hidden;
-}
-
-nav {
-  padding: 20px 0;
-  position: fixed;
-  width: 100vw;
-  z-index: 999;
-}
-
-nav ul {
-  column-gap: 40px;
-}
-nav ul li {
-  list-style: none;
-}
-
-nav ul li a {
-  color: #0a2f33;
-  text-decoration: none;
-}
-
-.small-nav {
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: -100vh;
-  left: 0;
-  transition: 0.3s;
-  background-color: white;
-  z-index: 998;
-}
-
-.small-nav > .small-nav-item {
-  padding: 20px 23px;
-}
-
-.small-nav > .small-nav-item:first-child {
-  border-top: 1.4px solid var(--line1);
-}
-
-.small-nav > .small-nav-item:hover {
-  background-color: var(--primary-light);
-}
-
-.small-nav > .small-nav-item:hover > a {
-  color: var(--primary);
-}
-
-.small-nav > .small-nav-item > a {
-  text-decoration: none;
-  color: #0a2f33;
-}
-
+@import url("nav.css");
+@import url("body.css");
+@import url("footer.css");
 /* header */
 
 header {
@@ -69,9 +15,6 @@ header h1 {
 }
 
 /* main */
-main .desc {
-  margin-top: 6vh;
-}
 
 .sponsorship-wrapper {
   position: relative;
@@ -82,11 +25,11 @@ main .desc {
   /* animation: moveToLeft 9s linear infinite; */
 }
 
-.activity-box,
 .documentary,
 .statistic,
-.desc {
-  margin-top: 90px;
+.activity-box,
+#main .desc {
+  margin-top: 120px;
 }
 
 @keyframes moveToLeft {
@@ -106,7 +49,8 @@ main .desc {
 
 .statistic {
   max-width: 700px;
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
   text-align: center;
 }
 
@@ -150,46 +94,7 @@ ul.activity-list li::after {
   margin-top: -6px;
 }
 
-/* footer */
-footer {
-  background-color: var(--dark-blue);
-  padding-top: 40px;
-}
-
-footer .footer-list-item {
-  list-style: none;
-  padding-left: 0;
-  margin-top: 20px;
-}
-
-footer .footer-list-item > li {
-  margin-top: 7px;
-}
-
-footer .footer-list-item > li > a {
-  text-decoration: none;
-  color: var(--gray2);
-}
-
-footer .footer-item-container {
-  gap: 20px;
-}
-
-footer .gmaps {
-  width: 100%;
-  height: 50vh;
-}
-
-footer .copyright {
-  background-color: #0a2f33;
-  text-align: center;
-  color: white;
-}
-
 @media screen and (min-width: 768px) {
-  nav {
-    padding: 26px 0;
-  }
   main .desc {
     margin-top: 23vh;
   }
@@ -197,11 +102,7 @@ footer .copyright {
   .activity-box,
   .documentary,
   .statistic,
-  .desc {
+  #main .desc {
     margin-top: 190px;
-  }
-
-  footer .footer-item-container {
-    gap: 60px;
   }
 }

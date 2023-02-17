@@ -1,13 +1,13 @@
-const wrapper = document.querySelector(".sponsorship-wrapper");
-const imageList = document.querySelector(".sponsorship");
-const imageWidth = imageList.offsetWidth;
-const wrapperWidth = wrapper.offsetWidth;
+// const wrapper = document.querySelector(".sponsorship-wrapper");
+// const imageList = document.querySelector(".sponsorship");
+// const imageWidth = imageList.offsetWidth;
+// const wrapperWidth = wrapper.offsetWidth;
 
-const checkSponsorshipPosition = () => {
-  if (imageWidth + imageList.offsetLeft < 0) imageList.style.left = `${wrapperWidth} px`;
+// const checkSponsorshipPosition = () => {
+//   if (imageWidth + imageList.offsetLeft < 0) imageList.style.left = `${wrapperWidth} px`;
 
-  requestAnimationFrame(checkSponsorshipPosition);
-};
+//   requestAnimationFrame(checkSponsorshipPosition);
+// };
 
 // checkSponsorshipPosition();
 const addNavbarBg = () => {

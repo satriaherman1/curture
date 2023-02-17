@@ -1,0 +1,49 @@
+/* footer */
+footer {
+  background-color: var(--dark-blue);
+  padding-top: 40px;
+}
+
+footer .footer-list-item {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+footer .footer-list-item > li {
+  margin-top: 7px;
+}
+
+footer .footer-list-item > li > a {
+  text-decoration: none;
+  color: var(--gray2);
+}
+
+footer .footer-item-container {
+  gap: 20px;
+}
+
+footer .gmaps {
+  width: 100%;
+  height: 40vh;
+}
+
+footer .copyright {
+  background-color: #0a2f33;
+  text-align: center;
+  color: white;
+}
+
+footer .join-now {
+  background-color: #082d31;
+}
+
+footer .join-now > section > p {
+  color: var(--gray2);
+}
+
+@media screen and (min-width: 768px) {
+  footer .footer-item-container {
+    gap: 60px;
+  }
+}
