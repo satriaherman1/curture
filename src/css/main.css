@@ -22,6 +22,7 @@ nav ul li {
 }
 
 nav ul li a {
+  color: #0a2f33;
   text-decoration: none;
 }
 
@@ -81,6 +82,13 @@ main .desc {
   /* animation: moveToLeft 9s linear infinite; */
 }
 
+.activity-box,
+.documentary,
+.statistic,
+.desc {
+  margin-top: 90px;
+}
+
 @keyframes moveToLeft {
   0% {
     margin-left: 0;
@@ -130,6 +138,18 @@ ul.activity-list li::after {
   background-size: contain;
 }
 
+.activity-wrapper section {
+  box-shadow: 0px 0px 30px rgba(175, 174, 174, 0.25);
+  background: white;
+  width: 98%;
+  margin: 20px auto;
+}
+
+/* documentary */
+.documentary-wrapper > section > p {
+  margin-top: -6px;
+}
+
 /* footer */
 footer {
   background-color: var(--dark-blue);
@@ -172,6 +192,13 @@ footer .copyright {
   }
   main .desc {
     margin-top: 23vh;
+  }
+
+  .activity-box,
+  .documentary,
+  .statistic,
+  .desc {
+    margin-top: 190px;
   }
 
   footer .footer-item-container {
