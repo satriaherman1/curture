@@ -3,6 +3,8 @@
 @import url("../button.css");
 @import url("../fonts.css");
 @import url("../body.css");
+@import url("/src/css/switcher.css");
+@import url("/src/css/dark.css");
 
 #newsCarousel {
   margin-top: 10vh;
@@ -55,12 +57,32 @@ body#main .news-tabs button.active {
   color: #333;
 }
 
+/* news items */
 .news .news-item h2 {
   margin-bottom: 0;
+}
+
+.news-item {
+  flex-basis: 100%;
 }
 
 @media screen and (min-width: 768px) {
   .news-carousel-img {
     height: 65vh;
   }
+
+  .news-item {
+    flex-basis: 48%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .news-item {
+    flex-basis: 32%;
+  }
+}
+
+/* utils */
+.nowrap {
+  white-space: nowrap;
 }

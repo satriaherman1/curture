@@ -84,7 +84,7 @@ ul.activity-list li::after {
   width: 30px;
   height: 30px;
   transform: translateY(-50%);
-  background-image: url("../images/checklist.svg");
+  background-image: url("/src/images/checklist.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -102,6 +102,29 @@ ul.activity-list li::after {
   margin-top: -6px;
 }
 
+/* join */
+.join-community {
+  margin: 9vh 0 0 0;
+}
+
+.join-community .join-community-box {
+  background-image: url("/src/images/join-us.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  padding: 60px 30px;
+  color: white;
+}
+
+.join-community .join-community-box section:first-child {
+  flex-basis: 45%;
+}
+
+#main footer {
+  margin-top: 0;
+}
+
 @media screen and (min-width: 768px) {
   main .desc {
     margin-top: 23vh;
@@ -112,5 +135,13 @@ ul.activity-list li::after {
   .statistic,
   #main .desc {
     margin-top: 190px;
+  }
+
+  .join-community .join-community-box {
+    border-radius: 20px;
+  }
+
+  .join-community {
+    margin: 16vh 0;
   }
 }

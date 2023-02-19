@@ -60,3 +60,8 @@ body.dark {
 .dark p {
   color: white;
 }
+
+/* posts */
+#main.dark .news-tabs button {
+  color: white;
+}

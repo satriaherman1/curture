@@ -10,6 +10,7 @@
   letter-spacing: 3% !important;
   transition: 0.3s;
   width: fit-content;
+  height: fit-content;
 }
 
 .social-media {

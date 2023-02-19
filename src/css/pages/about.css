@@ -48,6 +48,12 @@ header {
   color: white;
 }
 
+/* swiper */
+
+.swiper {
+  width: 600px;
+  height: 300px;
+}
 @media screen and (min-width: 768px) {
   header .img1 {
     margin-top: 100px;
