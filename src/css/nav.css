@@ -3,6 +3,7 @@ nav {
   position: fixed;
   width: 100vw;
   z-index: 999;
+  font-family: "Poppins", sans-serif;
 }
 
 nav ul {
@@ -26,6 +27,7 @@ nav ul li a {
   transition: 0.3s;
   background-color: white;
   z-index: 998;
+  font-family: "Poppins", sans-serif;
 }
 
 .small-nav > .small-nav-item {

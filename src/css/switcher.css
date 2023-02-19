@@ -1,48 +1,53 @@
-.custom-control-input {
-  position: absolute;
-  left: -9999px;
-  visibility: hidden;
-}
-
-.custom-control-label {
-  align-items: center;
+@import url("colors.css");
+.custom-switch label {
+  width: 60px;
+  height: 30px;
+  background-color: #eaeaea;
   cursor: pointer;
-  user-select: none;
-  position: relative;
-  box-shadow: 0px 0px 30px rgba(128, 127, 127, 0.25);
-  padding: 4px;
-  border-radius: 20px;
-}
-
-.custom-control-label i {
-  position: absolute;
-  left: 10%;
-}
-
-.custom-control-label::before {
-  content: "";
-  display: inline-block;
-  position: relative;
-  width: 2em;
-  height: 1em;
-  border-radius: 1em;
-  background-color: #fff;
-  transition: background-color 0.3s ease-in-out;
-  box-shadow: 0px 0px 30px rgba(175, 174, 174, 0.25);
-}
-
-.custom-control-input:checked ~ .custom-control-label::before {
-  background-color: #fff;
-}
-
-.custom-control-input:checked ~ .custom-control-label i {
-  background-color: #fff;
-  padding: 9px;
   border-radius: 100px;
-
-  left: 70%;
+  position: relative;
 }
 
-.custom-control-input:checked ~ .custom-control-label i.fa-moon {
-  display: inline-block;
+.custom-switch input {
+  display: none;
+}
+
+.custom-switch label .icon-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  background-color: white;
+  padding: 4px;
+  border-radius: 100px;
+  color: #333;
+  transition: 0.4s;
+}
+
+.dark .custom-switch label {
+  background-color: var(--primary);
+}
+
+.dark .custom-switch label .icon-wrapper {
+  left: 54%;
+}
+
+.dark .custom-switch label i.fa-sun {
+  display: none;
+}
+.dark .custom-switch label i.fa-moon {
+  display: block;
+}
+.custom-switch label i.fa-moon {
+  display: none;
+}
+.custom-switch label i.fa-sun {
+  display: block;
+}
+
+/* switcher small */
+.switcher-small {
+  position: absolute;
+  left: 5%;
+  bottom: 12%;
 }

@@ -1,11 +1,11 @@
-@import url("fonts.css");
-@import url("button.css");
-@import url("colors.css");
-@import url("nav.css");
-@import url("body.css");
-@import url("footer.css");
-@import url("switcher.css");
-@import url("dark.css");
+@import url("../fonts.css");
+@import url("../button.css");
+@import url("../colors.css");
+@import url("../nav.css");
+@import url("../body.css");
+@import url("../footer.css");
+@import url("../switcher.css");
+@import url("../dark.css");
 /* header */
 
 header {

@@ -23,3 +23,7 @@ ul {
 .txt-gray1 {
   color: var(--gray1);
 }
+
+body p {
+  margin-bottom: 0;
+}

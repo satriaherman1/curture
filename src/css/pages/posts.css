@@ -1,0 +1,66 @@
+@import url("../nav.css");
+@import url("../footer.css");
+@import url("../button.css");
+@import url("../fonts.css");
+@import url("../body.css");
+
+#newsCarousel {
+  margin-top: 10vh;
+}
+
+.news-carousel-img {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40vh;
+  width: 100vw;
+  position: relative;
+}
+
+.news-carousel-img1 {
+  background-image: url("/src/images/posts/post1.jpeg");
+}
+.news-carousel-img2 {
+  background-image: url("/src/images/posts/post2.jpeg");
+}
+.news-carousel-img3 {
+  background-image: url("/src/images/posts/post3.jpeg");
+}
+
+.news-carousel-img .caption {
+  text-align: center;
+  color: white;
+  min-width: 300px;
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  bottom: 4%;
+}
+
+.news-carousel-img .caption p {
+  opacity: 0.8;
+}
+
+/* news tabs */
+
+body#main .news-tabs button.active {
+  background-color: transparent;
+  border-bottom: 2px solid var(--primary);
+  font-weight: 600;
+  border-radius: 0;
+  color: var(--primary);
+}
+
+#main .news-tabs button {
+  color: #333;
+}
+
+.news .news-item h2 {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .news-carousel-img {
+    height: 65vh;
+  }
+}

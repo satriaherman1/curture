@@ -5,9 +5,6 @@ const body = document.querySelector("body");
 function checkDarkMode() {
   if (this.checked) {
     body.classList.add("dark");
-    console.log(switcherIcon);
-    switcherIcon.classList.add("fa-moon");
-    switcherIcon.classList.remove("fa-sun");
   } else {
     body.classList.remove("dark");
   }

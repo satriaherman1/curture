@@ -2,6 +2,7 @@
 footer {
   background-color: var(--dark-blue);
   padding-top: 40px;
+  margin-top: 10vh;
 }
 
 footer .footer-list-item {

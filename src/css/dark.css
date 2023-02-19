@@ -6,14 +6,30 @@ body.dark {
 
 .dark nav {
   background-color: var(--dark-footer) !important;
+}
+
+.dark nav ul li a {
+  color: white;
+}
+
+.dark .small-nav {
+  background-color: var(--dark2) !important;
+}
+
+.dark .small-nav a {
   color: white;
 }
 
 .dark nav ul li {
   color: white;
 }
+
 .dark .sponsorship-wrapper {
   background-color: var(--dark2);
+}
+
+.dark .desc p {
+  color: white;
 }
 
 .dark .activity-box {
@@ -27,4 +43,20 @@ body.dark {
 
 .dark footer {
   background-color: var(--dark-footer);
+}
+
+.dark footer .join-now {
+  background-color: var(--dark-box);
+}
+.dark footer .copyright {
+  background-color: var(--dark-blue);
+}
+
+/* about */
+.dark .vision {
+  background-color: var(--dark-box);
+}
+
+.dark p {
+  color: white;
 }

@@ -32,7 +32,7 @@ const handleClickNav = (nav) => {
   const smallNavbar = document.querySelector(".small-nav");
 
   if (!smallNavbar.classList.contains("active")) {
-    smallNavbar.style.top = navbar.clientHeight + "px";
+    smallNavbar.style.top = navbar.clientHeight - 2 + "px";
     navbar.classList.remove("shadow");
   } else {
     smallNavbar.style.top = -100 + "vh";
