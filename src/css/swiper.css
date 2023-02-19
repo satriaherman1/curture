@@ -1,0 +1,12 @@
+@import url("colors.css");
+#main .swiper-pagination {
+  bottom: 0px;
+}
+
+#main .swiper-pagination span.swiper-pagination-bullet-active {
+  background-color: var(--primary);
+}
+
+#main.dark .swiper-pagination-bullet {
+  background-color: var(--gray1);
+}
