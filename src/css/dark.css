@@ -1,0 +1,30 @@
+@import url("colors.css");
+body.dark {
+  background-color: var(--dark);
+  color: #fff;
+}
+
+.dark nav {
+  background-color: var(--dark-footer) !important;
+  color: white;
+}
+
+.dark nav ul li {
+  color: white;
+}
+.dark .sponsorship-wrapper {
+  background-color: var(--dark2);
+}
+
+.dark .activity-box {
+  background-color: var(--dark2);
+}
+
+.dark .activity-wrapper section {
+  background-color: var(--dark-box) !important;
+  box-shadow: unset;
+}
+
+.dark footer {
+  background-color: var(--dark-footer);
+}

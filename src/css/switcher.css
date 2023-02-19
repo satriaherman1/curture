@@ -1,0 +1,48 @@
+.custom-control-input {
+  position: absolute;
+  left: -9999px;
+  visibility: hidden;
+}
+
+.custom-control-label {
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  box-shadow: 0px 0px 30px rgba(128, 127, 127, 0.25);
+  padding: 4px;
+  border-radius: 20px;
+}
+
+.custom-control-label i {
+  position: absolute;
+  left: 10%;
+}
+
+.custom-control-label::before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  width: 2em;
+  height: 1em;
+  border-radius: 1em;
+  background-color: #fff;
+  transition: background-color 0.3s ease-in-out;
+  box-shadow: 0px 0px 30px rgba(175, 174, 174, 0.25);
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #fff;
+}
+
+.custom-control-input:checked ~ .custom-control-label i {
+  background-color: #fff;
+  padding: 9px;
+  border-radius: 100px;
+
+  left: 70%;
+}
+
+.custom-control-input:checked ~ .custom-control-label i.fa-moon {
+  display: inline-block;
+}

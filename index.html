@@ -14,12 +14,12 @@
   </head>
   <body id="main">
     <nav>
-      <div class="container px-3 d-flex justify-content-between">
+      <div class="container px-3 d-flex align-items-center justify-content-between">
         <div id="logo">
           <h3>Curture</h3>
         </div>
 
-        <div class="nav-list d-flex align-items-center">
+        <div class="nav-list d-flex justify-content-between align-items-center">
           <ul class="d-none d-md-flex mb-0">
             <li>
               <a href="/">Home</a>
@@ -41,6 +41,13 @@
             <span></span>
           </button>
         </div>
+
+        <div class="custom-control custom-switch d-none d-md-flex">
+          <input type="checkbox" class="custom-control-input" id="dark-mode-switch" />
+          <label class="custom-control-label" for="dark-mode-switch">
+            <i class="fas fa-sun dark-switcher-icon"></i>
+          </label>
+        </div>
       </div>
     </nav>
 
@@ -57,6 +64,13 @@
       <section class="small-nav-item">
         <a href="/register.html">Daftar</a>
       </section>
+
+      <div class="custom-control custom-switch">
+        <input type="checkbox" class="custom-control-input" id="dark-mode-switch" />
+        <label class="custom-control-label" for="dark-mode-switch">
+          <i class="fas fa-sun dark-switcher-icon"></i>
+        </label>
+      </div>
     </div>
 
     <header>
@@ -68,31 +82,31 @@
             <button class="button button-primary mt-4">Gabung Sekarang!</button>
           </div>
           <div class="col-sm-12 col-md-6">
-            <img src="src/images/header.jpeg" width="100%" alt="" srcset="" />
+            <img src="src/images/header.png" width="100%" alt="" srcset="" />
           </div>
         </div>
       </div>
     </header>
 
     <main class="pt-3">
-      <div class="container px-4 px-md-3">
-        <marquee class="sponsorship-wrapper">
-          <div class="sponsorship d-flex gap-4 align-items-center">
-            <img src="https://logotyp.us/files/tokopedia.svg" width="200px" alt="" />
-            <img src="src/images/sponsorship/shopee.png" width="200px" alt="" />
-            <img src="src/images/sponsorship/grab.svg" width="200px" alt="" />
-            <img src="src/images/sponsorship/google.svg" width="200px" alt="" />
-            <img src="https://logotyp.us/files/tokopedia.svg" width="200px" alt="" />
-            <img src="src/images/sponsorship/shopee.png" width="200px" alt="" />
-            <img src="src/images/sponsorship/grab.svg" width="200px" alt="" />
-            <img src="src/images/sponsorship/google.svg" width="200px" alt="" />
-            <img src="https://logotyp.us/files/tokopedia.svg" width="200px" alt="" />
-            <img src="src/images/sponsorship/shopee.png" width="200px" alt="" />
-            <img src="src/images/sponsorship/grab.svg" width="200px" alt="" />
-            <img src="src/images/sponsorship/google.svg" width="200px" alt="" />
-          </div>
-        </marquee>
-        <div class="statistic">
+      <marquee class="sponsorship-wrapper">
+        <div class="sponsorship d-flex gap-4 align-items-center">
+          <img src="https://logotyp.us/files/tokopedia.svg" width="200px" alt="" />
+          <img src="src/images/sponsorship/shopee.png" width="200px" alt="" />
+          <img src="src/images/sponsorship/grab.svg" width="200px" alt="" />
+          <img src="src/images/sponsorship/google.svg" width="200px" alt="" />
+          <img src="https://logotyp.us/files/tokopedia.svg" width="200px" alt="" />
+          <img src="src/images/sponsorship/shopee.png" width="200px" alt="" />
+          <img src="src/images/sponsorship/grab.svg" width="200px" alt="" />
+          <img src="src/images/sponsorship/google.svg" width="200px" alt="" />
+          <img src="https://logotyp.us/files/tokopedia.svg" width="200px" alt="" />
+          <img src="src/images/sponsorship/shopee.png" width="200px" alt="" />
+          <img src="src/images/sponsorship/grab.svg" width="200px" alt="" />
+          <img src="src/images/sponsorship/google.svg" width="200px" alt="" />
+        </div>
+      </marquee>
+      <div class="statistic">
+        <div class="container px-4 px-md-3">
           <h1 class="text-center">Mari bergabung bersama komunitas budaya terbesar di indonesia</h1>
           <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima repellendus voluptatibus labore sit veniam aliquam similique consequatur? Ad, provident veritatis.</p>
 
@@ -111,36 +125,46 @@
             </div>
           </div>
         </div>
-        <div class="row desc gap-4">
-          <div class="col-md-6">
-            <img src="src/images/image1.jpeg" width="100%" alt="" srcset="" />
-          </div>
-          <div class="col-md-4 d-flex flex-column justify-content-center">
-            <h1>Mengapa Harus Bergabung?</h1>
-            <p class="mt-3 txt-gray1">
-              Curture merupakan wadah bagi pengembangan budaya yang ada di Indonesia. Dengan bergabung dengan Culture. kamu bisa memperkenalkan budaya kamu ke kancah Internasional dan kamu juga bisa
-              mempelajari budaya yang ada di Indonesia
-            </p>
-          </div>
-        </div>
-        <div class="row flex-column-reverse flex-md-row gap-4 desc justify-content-between">
-          <div class="col-sm-12 col-md-4 d-flex flex-column justify-content-center">
-            <h1>Berbagai Kegiatan Yang Seru!</h1>
-            <p class="mt-3 txt-gray1">Kami memiliki berbagai kegiatan yang seru di dalam komunitas seperti:</p>
-            <ul class="activity-list">
-              <li>Festival Budaya</li>
-              <li>Kemah Budaya</li>
-              <li>Pekan Diskui</li>
-              <li>Bakti Masyarakat</li>
-            </ul>
-          </div>
-          <div class="col-sm-12 col-md-6">
-            <img src="src/images/image2.jpeg" width="100%" alt="" srcset="" />
+      </div>
+      <div class="desc">
+        <div class="container px-4 px-md-3">
+          <div class="row gap-4">
+            <div class="col-md-6">
+              <img src="src/images/image1.png" width="100%" alt="" srcset="" />
+            </div>
+            <div class="col-md-4 d-flex flex-column justify-content-center">
+              <h1>Mengapa Harus Bergabung?</h1>
+              <p class="mt-3 txt-gray1">
+                Curture merupakan wadah bagi pengembangan budaya yang ada di Indonesia. Dengan bergabung dengan Culture. kamu bisa memperkenalkan budaya kamu ke kancah Internasional dan kamu juga bisa
+                mempelajari budaya yang ada di Indonesia
+              </p>
+            </div>
           </div>
         </div>
+      </div>
+      <div class="desc">
+        <div class="container px-4 px-md-3">
+          <div class="row flex-column-reverse flex-md-row gap-4 justify-content-between">
+            <div class="col-sm-12 col-md-4 d-flex flex-column justify-content-center">
+              <h1>Berbagai Kegiatan Yang Seru!</h1>
+              <p class="mt-3 txt-gray1">Kami memiliki berbagai kegiatan yang seru di dalam komunitas seperti:</p>
+              <ul class="activity-list">
+                <li>Festival Budaya</li>
+                <li>Kemah Budaya</li>
+                <li>Pekan Diskui</li>
+                <li>Bakti Masyarakat</li>
+              </ul>
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <img src="src/images/image2.png" width="100%" alt="" srcset="" />
+            </div>
+          </div>
+        </div>
+      </div>
 
-        <!-- list kegiatan -->
-        <div class="activity-box">
+      <!-- list kegiatan -->
+      <div class="activity-box">
+        <div class="container px-4 px-md-3">
           <h1>Apa Saja Kegiatan Kami?</h1>
           <p>Kami memiliki beberapa kegiatan bermasyarakat Seperti</p>
 
@@ -171,8 +195,10 @@
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="documentary">
+      <div class="documentary">
+        <div class="container px-4 px-md-3">
           <h1>Dokumentasi Kegiatan</h1>
           <p>Dokumentasi kegiatan dari komunitas kami!</p>
 
@@ -294,6 +320,7 @@
       <section class="copyright py-4 mt-4">&copy; Muhammad Satria Herman 2023</section>
     </footer>
     <script src="src/js/main.js"></script>
+    <script src="src/js/utils/dark.js"></script>
     <script src="https://kit.fontawesome.com/048ba41632.js" crossorigin="anonymous"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"

@@ -16,14 +16,14 @@ const addNavbarBg = () => {
 
   if (!smallNavbar.classList.contains("active")) {
     if (window.scrollY > 10) {
-      navbar.style.backgroundColor = "white";
+      navbar.classList.add("bg-white");
       navbar.classList.add("shadow");
     } else {
       navbar.style.backgroundColor = "transparent";
       navbar.classList.remove("shadow");
     }
   } else {
-    navbar.style.backgroundColor = "white";
+    navbar.classList.add("white");
   }
 };
 
