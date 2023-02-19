@@ -4,6 +4,10 @@ body.dark {
   color: #fff;
 }
 
+.dark .txt-gray1 {
+  color: #fff;
+}
+
 .dark nav {
   background-color: var(--dark-footer) !important;
 }
@@ -49,7 +53,7 @@ body.dark {
   background-color: var(--dark-box);
 }
 .dark footer .copyright {
-  background-color: var(--dark-blue);
+  background-color: var(--dark-box);
 }
 
 /* about */
