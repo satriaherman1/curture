@@ -1,0 +1,27 @@
+@import url("/src/css/colors.css");
+
+.custom-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.custom-input {
+  padding: 18px 20px;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 2px solid #eaeaea;
+  transition: 0.3s;
+  outline: none;
+}
+
+.custom-input:focus {
+  border-color: var(--primary);
+}
+
+span.required {
+  color: rgb(154, 11, 11);
+}
+
+.dark span.required {
+  color: red;
+}

@@ -69,3 +69,22 @@ body.dark {
 #main.dark .news-tabs button {
   color: white;
 }
+
+/* register */
+
+.dark .register-form {
+  background-color: var(--dark-box);
+}
+
+.dark .register-form {
+  box-shadow: unset;
+}
+
+.dark .custom-input {
+  /* border-color: #a9a9a9; */
+  color: white;
+}
+
+.dark .custom-input::placeholder {
+  color: #c4c4c4;
+}
