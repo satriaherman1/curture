@@ -31,7 +31,7 @@ const swiper = new Swiper(".swiper", {
 });
 
 let b = baffle(".title", {
-  characters: "█▓█ ▒░/▒░ █░▒▓/ █▒▒ ▓▒▓/█ ░█▒/ ▒▓░ █<░▒ ▓/░",
+  characters: "█▓█ ▒░/▒░",
   speed: 100,
 });
 setInterval(() => {
