@@ -23,6 +23,9 @@ ul {
 .txt-gray1 {
   color: var(--gray1);
 }
+.txt-primary {
+  color: var(--primary) !important;
+}
 
 body p {
   margin-bottom: 0;

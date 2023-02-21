@@ -3,6 +3,9 @@ const swiper = new Swiper(".swiper", {
   direction: "horizontal",
   loop: true,
   effect: "coverflow",
+  coverflowEffect: {
+    slideShadows: false,
+  },
 
   // If we need pagination
   pagination: {
