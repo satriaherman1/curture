@@ -45,6 +45,11 @@ body.dark {
   box-shadow: unset;
 }
 
+.dark .feedback {
+  background: var(--dark-box);
+  box-shadow: unset;
+}
+
 .dark footer {
   background-color: var(--dark-footer);
 }

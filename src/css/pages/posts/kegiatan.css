@@ -1,0 +1,11 @@
+@import url("/src/css/nav.css");
+@import url("/src/css/footer.css");
+@import url("/src/css/button.css");
+@import url("/src/css/fonts.css");
+@import url("/src/css/body.css");
+@import url("/src/css/switcher.css");
+@import url("/src/css/dark.css");
+
+header {
+  margin-top: 12vh;
+}

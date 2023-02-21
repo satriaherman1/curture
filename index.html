@@ -11,6 +11,7 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   </head>
   <body id="main">
     <nav>
@@ -83,7 +84,7 @@
       <div class="container px-4 px-md-3">
         <div class="row flex-column-reverse flex-md-row">
           <div class="col-sm-12 col-md-6 d-flex flex-column justify-content-center">
-            <h1>Lestarikan Budaya Daerahmu Dan Kenalkan Kepada Dunia</h1>
+            <h1>Lestarikan Budaya Daerahmu Dan <span class="title"></span></h1>
             <p class="mt-3">Gabung bersama kami di komunitas budaya untuk melestarikan Budaya daerahmu dan membawanya ke kancah dunia!</p>
             <button class="button button-primary mt-4">Gabung Sekarang!</button>
           </div>
@@ -193,10 +194,10 @@
             </div>
             <div class="col-sm-12 col-md-4 activity-wrapper">
               <section class="bg-white rounded-lg p-4">
-                <img src="src/images/qna.png" width="60px" alt="" srcset="" />
+                <img src="src/images/icons/camp.png" width="60px" alt="" srcset="" />
 
-                <h3 class="mt-4">Forum Diskusi</h3>
-                <p class="mt-3">Kami memiliki forum diskusi yang membahas tentang perkembangan budaya di Indonesia dan berita mengenai budaya yang baru terlahir</p>
+                <h3 class="mt-4">Kemah Budaya</h3>
+                <p class="mt-3">Selain kegiatan event formal, kami juga punya kegiatan kemah seru yang merekatkan tali persaudaraan antar anggota</p>
               </section>
             </div>
           </div>
@@ -211,7 +212,7 @@
           <div class="row mt-5 row-gap-4">
             <div class="col-sm-12 col-md-4 documentary-wrapper">
               <section class="p-2">
-                <img src="src/images/posts/activity.png" width="100%" alt="" srcset="" />
+                <img src="src/images/posts/activity.png" class="rounded-4" width="100%" alt="" srcset="" />
 
                 <h3 class="mt-4">Festival Budaya</h3>
                 <p class="text-gray mt-n2">Pameran budaya internasional</p>
@@ -227,33 +228,33 @@
             </div>
             <div class="col-sm-12 col-md-4 documentary-wrapper">
               <section class="p-2">
-                <img src="src/images/posts/activity.png" width="100%" alt="" srcset="" />
+                <img src="src/images/posts/volunter.jpeg" class="rounded-4" width="100%" alt="" srcset="" />
 
-                <h3 class="mt-4">Festival Budaya</h3>
-                <p class="text-gray mt-n2">Pameran budaya internasional</p>
+                <h3 class="mt-4">Bakti Masyarakat</h3>
+                <p class="text-gray mt-n2">Bakti Masyarakat Tahunan</p>
 
                 <div class="d-flex mt-2 txt-gray1">
                   <img src="src/images/icons/calendar.svg" width="20px" alt="" srcset="" />
-                  <span class="ms-2 d-inline-block"> 22 November 2022</span>
+                  <span class="ms-2 d-inline-block"> 12 Oktober 2022</span>
                   <span class="mx-2">|</span>
                   <img src="src/images/icons/calendar.svg" width="20px" alt="" srcset="" />
-                  <span class="ms-2 d-inline-block"> Semarang</span>
+                  <span class="ms-2 d-inline-block"> Denpasar</span>
                 </div>
               </section>
             </div>
             <div class="col-sm-12 col-md-4 documentary-wrapper">
               <section class="p-2">
-                <img src="src/images/posts/activity.png" width="100%" alt="" srcset="" />
+                <img src="src/images/posts/perang-obor.jpeg" class="rounded-4" width="100%" alt="" srcset="" />
 
-                <h3 class="mt-4">Festival Budaya</h3>
-                <p class="text-gray mt-n2">Pameran budaya internasional</p>
+                <h3 class="mt-4">Perang Obor</h3>
+                <p class="text-gray mt-n2">Pertunjukan Perang Obor</p>
 
                 <div class="d-flex mt-2 txt-gray1">
                   <img src="src/images/icons/calendar.svg" width="20px" alt="" srcset="" />
-                  <span class="ms-2 d-inline-block"> 22 November 2022</span>
+                  <span class="ms-2 d-inline-block"> 7 Februari 2021</span>
                   <span class="mx-2">|</span>
                   <img src="src/images/icons/calendar.svg" width="20px" alt="" srcset="" />
-                  <span class="ms-2 d-inline-block"> Semarang</span>
+                  <span class="ms-2 d-inline-block"> Surabaya</span>
                 </div>
               </section>
             </div>
@@ -278,6 +279,46 @@
             <p>Kenali Budaya Indonesia</p>
           </section>
           <button class="button button-primary">Gabung Sekarang!</button>
+        </div>
+
+        <div class="swiper my-4">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="feedback d-flex gap-4 p-4">
+                <img src="/src/images/people/person1.jpeg" width="40px" height="40px" class="rounded-circle" alt="" srcset="" />
+                <section>
+                  <h5 class="mb-0">Adam Smith</h5>
+                  <p class="txt-gray1">Anggota</p>
+
+                  <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor quibusdam rerum vero quae facere</p>
+                </section>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="feedback d-flex gap-4 p-4">
+                <img src="/src/images/people/person1.jpeg" width="40px" height="40px" class="rounded-circle" alt="" srcset="" />
+                <section>
+                  <h5 class="mb-0">Adam Smith</h5>
+                  <p class="txt-gray1">Anggota</p>
+
+                  <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor quibusdam rerum vero quae facere</p>
+                </section>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="feedback d-flex gap-4 p-4">
+                <img src="/src/images/people/person1.jpeg" width="40px" height="40px" class="rounded-circle" alt="" srcset="" />
+                <section>
+                  <h5 class="mb-0 txt-gray1">Adam Smith</h5>
+                  <p>Anggota</p>
+
+                  <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor quibusdam rerum vero quae facere</p>
+                </section>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
         </div>
       </div>
     </main>
@@ -346,6 +387,10 @@
       <section class="copyright py-4 mt-4">&copy; Muhammad Satria Herman 2023</section>
     </footer>
     <script src="src/js/main.js"></script>
+    <script type="text/javascript" src="https//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script src="src/js/index.js"></script>
     <script src="src/js/utils/dark.js"></script>
     <script src="https://kit.fontawesome.com/048ba41632.js" crossorigin="anonymous"></script>
     <script
