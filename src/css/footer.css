@@ -22,6 +22,7 @@ footer .footer-list-item > li > a {
 
 footer .footer-item-container {
   gap: 20px;
+  margin-top: 20px;
 }
 
 footer .gmaps {
@@ -46,5 +47,11 @@ footer .join-now > section > p {
 @media screen and (min-width: 768px) {
   footer .footer-item-container {
     gap: 60px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  footer .footer-item-container {
+    justify-content: space-around;
   }
 }
