@@ -33,10 +33,15 @@ const handleClickNav = (nav) => {
 
   if (!smallNavbar.classList.contains("active")) {
     smallNavbar.style.top = navbar.clientHeight - 2 + "px";
+    navbar.classList.add("bg-white");
     navbar.classList.remove("shadow");
   } else {
     smallNavbar.style.top = -100 + "vh";
     navbar.classList.add("shadow");
+    if (window.scrollY < 20) {
+      navbar.classList.remove("shadow");
+      navbar.classList.remove("bg-white");
+    }
   }
   nav.classList.toggle("active");
   smallNavbar.classList.toggle("active");
