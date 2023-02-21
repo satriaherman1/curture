@@ -155,7 +155,7 @@ ul.activity-list li::after {
 
 @media screen and (min-width: 768px) {
   main .desc {
-    margin-top: 23vh;
+    margin-top: 25vh;
   }
 
   .activity-box,

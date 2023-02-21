@@ -40,6 +40,12 @@ var options = {
   loop: true,
 };
 
-console.log("test");
-
 var typed = new Typed(".title", options);
+
+// window.onload = function () {
+console.log("hi");
+AOS.init({
+  duration: 650,
+  once: true,
+});
+// };
