@@ -30,18 +30,18 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
-const str1 = "Kenalkan Kepada Dunia";
-const str2 = "Tunjukkan Kepada Mereka";
+let b = baffle(".title", {
+  characters: "█▓█ ▒░/▒░ █░▒▓/ █▒▒ ▓▒▓/█ ░█▒/ ▒▓░ █<░▒ ▓/░",
+  speed: 100,
+});
+setInterval(() => {
+  b.reveal(4000);
+  b.stop();
+}, 3000);
 
-var options = {
-  strings: [str1, str2],
-  typeSpeed: 100,
-  backSpeed: 80,
-  loop: true,
-};
-
-var typed = new Typed(".title", options);
-
+setInterval(() => {
+  b.start();
+}, 4000);
 // window.onload = function () {
 console.log("hi");
 AOS.init({
