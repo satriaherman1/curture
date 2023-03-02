@@ -13,6 +13,13 @@
     />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intro.js/6.0.0/introjs.min.css"
+      integrity="sha512-ZltC0pC5nP28uLJ2SBRo8EmFHA+giWPQC6nM4xzwW4hXsTaIsfSMn0qTtotOP8NNWlAohVlJtDfLRKXxA7mJ4A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body id="main">
     <nav>
@@ -81,7 +88,7 @@
       </div>
     </div>
 
-    <header>
+    <header data-title="Navigasi" data-intro="Ini adalah navigasi halaman">
       <div class="container mt-4 px-4 px-md-3">
         <div class="row flex-column-reverse flex-lg-row">
           <div data-aos="fade" class="col-sm-12 col-lg-6 d-flex flex-column justify-content-center">
@@ -407,6 +414,27 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script>
+      (function (g, u, i, d, e, s) {
+        g[e] = g[e] || [];
+        var f = u.getElementsByTagName(i)[0];
+        var k = u.createElement(i);
+        k.async = true;
+        k.src = "https://static.userguiding.com/media/user-guiding-" + s + "-embedded.js";
+        f.parentNode.insertBefore(k, f);
+        if (g[d]) return;
+        var ug = (g[d] = { q: [] });
+        ug.c = function (n) {
+          return function () {
+            ug.q.push([n, arguments]);
+          };
+        };
+        var m = ["previewGuide", "finishPreview", "track", "identify", "triggerNps", "hideChecklist", "launchChecklist"];
+        for (var j = 0; j < m.length; j += 1) {
+          ug[m[j]] = ug.c(m[j]);
+        }
+      })(window, document, "script", "userGuiding", "userGuidingLayer", "125708641ID");
+    </script>
     <script src="src/js/index.js"></script>
     <script src="src/js/utils/dark.js"></script>
     <script src="https://kit.fontawesome.com/048ba41632.js" crossorigin="anonymous"></script>

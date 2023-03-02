@@ -1,3 +1,6 @@
+// start onboarding
+introJs().start();
+
 const swiper = new Swiper(".swiper", {
   // Optional parameters
   direction: "horizontal",
