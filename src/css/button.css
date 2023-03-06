@@ -36,6 +36,21 @@
   color: white;
 }
 
+.whatsapp {
+  background-color: var(--whatsapp);
+  color: white;
+}
+
+.copy {
+  background-color: var(--dark);
+  color: rgb(238, 232, 232);
+}
+
+.dark .copy {
+  background-color: #eaeaea;
+  color: #333;
+}
+
 .button-primary {
   background-color: var(--primary);
   color: white;

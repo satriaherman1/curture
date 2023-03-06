@@ -6,6 +6,24 @@
 @import url("/src/css/switcher.css");
 @import url("/src/css/dark.css");
 
-header {
+main {
   margin-top: 12vh;
+}
+
+.newest-post-box {
+  border: 1px solid #eaeaea;
+}
+
+.newest-post-box .news-item {
+  margin-top: 20px;
+}
+.dark .newest-post-box {
+  background: var(--dark-box);
+  border: none;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    margin-top: 20vh;
+  }
 }

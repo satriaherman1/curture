@@ -5,8 +5,9 @@ const optionArr = [];
 
 const optionListSearchClick = (opt, index, selectId = null, ulId = null) => {
   const select = document.querySelector(selectId);
+  const customSelectElement = document.querySelector(".custom-select-list-box");
   const ul = document.querySelector(ulId);
-  console.log(ulId);
+
   if (selectId !== null) {
     select.value = opt.textContent;
     // select.parentElement.classList.add('d-none');
@@ -17,7 +18,7 @@ const optionListSearchClick = (opt, index, selectId = null, ulId = null) => {
     const currentSelect = customSelectSearchField[index].querySelector("select");
     currentSelect.value = opt.textContent;
   }
-  opt.parentElement.classList.add("d-none");
+  customSelectElement.classList.add("d-none");
 };
 
 const selectSearchClick = (select, toggleUl = false) => {

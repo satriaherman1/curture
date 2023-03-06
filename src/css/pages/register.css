@@ -12,6 +12,10 @@ main {
   margin-top: 14vh;
 }
 
+body {
+  background-color: #eaeaea;
+}
+
 .register-form {
   box-shadow: 0px 0px 30px rgba(175, 174, 174, 0.25);
   margin-top: 5vh;

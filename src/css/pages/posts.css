@@ -57,6 +57,10 @@ body#main .news-tabs button.active {
   color: #333;
 }
 
+.news-tabs::-webkit-scrollbar {
+  display: none;
+}
+
 /* news items */
 .news .news-item h2 {
   margin-bottom: 0;
@@ -64,6 +68,11 @@ body#main .news-tabs button.active {
 
 .news-item {
   flex-basis: 100%;
+}
+
+.row a {
+  color: unset;
+  text-decoration: none;
 }
 
 @media screen and (min-width: 768px) {

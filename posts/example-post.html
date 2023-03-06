@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Curture</title>
+    <link rel="stylesheet" href="/src/css/pages/posts/example-post.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body id="main">
+    <nav>
+      <div class="container px-3 d-flex justify-content-between">
+        <div id="logo">
+          <h3>Curture</h3>
+        </div>
+
+        <div class="nav-list d-flex align-items-center">
+          <ul class="d-none d-md-flex mb-0">
+            <li>
+              <a href="/">Beranda</a>
+            </li>
+            <li>
+              <a href="/about.html">Tentang Kami</a>
+            </li>
+            <li>
+              <a href="/posts.html">Postingan</a>
+            </li>
+            <li>
+              <a href="/register.html">Daftar</a>
+            </li>
+          </ul>
+
+          <button class="button-drawer d-flex d-md-none" onclick="handleClickNav(this)">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <div class="custom-control custom-switch d-none d-md-flex">
+          <input type="checkbox" class="custom-control-input" id="dark-mode-switch" />
+          <label class="custom-control-label" for="dark-mode-switch">
+            <span class="icon-wrapper">
+              <i class="fas fa-sun dark-switcher-icon"></i>
+              <i class="fas fa-moon dark-switcher-icon"></i>
+            </span>
+          </label>
+        </div>
+      </div>
+    </nav>
+
+    <div class="small-nav d-flex flex-column d-md-none">
+      <section class="small-nav-item">
+        <a href="/">Beranda</a>
+      </section>
+      <section class="small-nav-item">
+        <a href="/about.html">Tentang Kami</a>
+      </section>
+      <section class="small-nav-item">
+        <a href="/posts.html">Postingan</a>
+      </section>
+      <section class="small-nav-item">
+        <a href="/register.html">Daftar</a>
+      </section>
+
+      <div class="custom-control custom-switch d-flex d-md-none switcher-small">
+        <input type="checkbox" class="custom-control-input" id="dark-mode-switch" />
+        <label class="custom-control-label" for="dark-mode-switch">
+          <span class="icon-wrapper">
+            <i class="fas fa-sun dark-switcher-icon"></i>
+            <i class="fas fa-moon dark-switcher-icon"></i>
+          </span>
+        </label>
+      </div>
+    </div>
+
+    <header></header>
+
+    <main>
+      <div class="container mt-5">
+        <div class="row flex-column flex-lg-row justify-content-between gap-4 gap-md-0">
+          <div class="col-12 col-md-7">
+            <!-- <h1>Festival Budaya Internasional</h1>
+            <p>20 Mei 2020 - 07:00 WIB</p> -->
+            <h2 class="text-center">Festival Perang Obor Jawa Tengah</h2>
+            <p class="text-center txt-gray1">Curture | <span class="date">Kamis, 20 Juli 2021</span></p>
+            <img src="/src/images/posts/perang-obor.jpeg" width="100%" class="mt-3 d-block rounded" />
+
+            <section class="mt-4">
+              <p>
+                <b> JEPARA</b> – Setelah sempat terhenti selama dua tahun karena pandemi, Festival Perang Obor kembali digelar dalam acara pamungkas sedekah bumi di Desa Tegalsambi, Senin (20/6/2022).
+                Apresiasi disampaikan Penjabat (Pj) Bupati Jepara melalui Sekretaris Daerah Edy Sujatmiko atas pelaksanaan perang obor kali ini, yang dapat kembali digelar dengan meriah. <br />
+                <br />
+                Tidak hanya pelaksanaan aktivitas sosial budaya, melalui event seperti ini Edy berharap, mampu menggerakkan kembali perekonomian masyarakat. Disampaikan, pihaknya sangat terkesan
+                dengan dengan masyarakat Tegalsambi, yang senantiasa melestarikan budaya lokal. Sebagaimana diketahui, perang obor merupakan warisan budaya tak benda (WBTB), yang diakui Kementerian
+                Pendidikan, Kebudayaan, Riset dan Teknologi (Kemendikbudristek) RI sejak 2021, bersama dengan Pesta Lomban dan Jembul Tulakan. Edy juga menyambut positif, inovasi Pemerintah Desa
+                Tegalsambi yang menuangkan perang obor ke dalam bentuk seni lain, seperti Batik Perang Obor dan Tari Obor. “Silakan berkomunikasi dengan Disparbud, nanti kita olah menjadi kreasi yang
+                lebih baik,” ucapnya. Ditemui secara terpisah, Petinggi Tegalsambi Agus Santoso mengatakan, tradisi perang obor merupakan tradisi turun temurun yang dilaksanakan tiap Senin Pahing,
+                malam Selasa Pon, di bulan besar atau Dzulhijjah, bertepatan dengan sedekah bumi desanya. “Ini merupakan bentuk rasa syukur kami. Api obor ini kami percaya mampu mendatangkan kesehatan
+                dan menolak bala,” kata Agus. <br />
+                <br />
+                Agus menceritakan, perang obor bermula dari legenda Ki Gemblong yang dipercaya oleh Kiai Babadan untuk merawat dan menggembalakan ternaknya. Namun, karena terlena dengan ikan dan udang
+                di sungai, ternak tersebut terlupakan sehingga sakit atau mati. Kiai Babadan yang tidak terima dengan kelalaian Ki Gemblong, memukul Ki Gemblong dengan obor dari pelapah kelapa.
+                Akibatnya, ia menggunakan obor serupa untuk membela diri. Tanpa diduga, benturan kedua obor menyebarkan api di tumpukan jerami di sebelah kandang, dan ternak yang awalnya sakit
+                tiba-tiba menjadi sembuh.
+              </p>
+
+              <div class="share mt-4">
+                <p>Bagikan :</p>
+                <div class="d-flex mt-2 gap-2">
+                  <button class="social-media copy" id="copyToastBtn">
+                    <i class="fa fa-copy"></i>
+                  </button>
+
+                  <a href="" class="d-inline-block">
+                    <button class="social-media facebook">
+                      <i class="fa fa-facebook"></i>
+                    </button>
+                  </a>
+                  <a href="" class="d-inline-block">
+                    <button class="social-media instagram">
+                      <i class="fa fa-instagram"></i>
+                    </button>
+                  </a>
+                  <a href="" class="d-inline-block">
+                    <button class="social-media twitter">
+                      <i class="fa fa-twitter"></i>
+                    </button>
+                  </a>
+
+                  <button class="social-media whatsapp" id="copyToastBtn">
+                    <i class="fa fa-whatsapp"></i>
+                  </button>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="col-12 col-md-4">
+            <section class="newest-post-box p-4 rounded">
+              <p>Postingan Terbaru</p>
+              <hr />
+              <div class="news-item d-flex align-items-center column-gap-3 mt-4">
+                <img src="/src/images/posts/news1.jpeg" class="rounded" width="82px" alt="" srcset="" />
+                <div class="news-desc">
+                  <h5>Event Budaya Nasional</h5>
+                  <p class="txt-gray1">18 Januari 2022</p>
+                </div>
+              </div>
+              <div class="news-item d-flex align-items-center column-gap-3">
+                <img src="/src/images/posts/camp.jpeg" class="rounded" width="82px" alt="" srcset="" />
+                <div class="news-desc">
+                  <h5>Kemah Budaya</h5>
+                  <p class="txt-gray1">20 Mei 2022</p>
+                </div>
+              </div>
+              <div class="news-item d-flex align-items-center column-gap-3">
+                <img
+                  src="https://images.unsplash.com/photo-1543906965-f9520aa2ed8a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
+                  class="rounded"
+                  width="82px"
+                  alt=""
+                  srcset=""
+                />
+                <div class="news-desc">
+                  <h5>Pameran Bali</h5>
+                  <p class="txt-gray1">16 April 2021</p>
+                </div>
+              </div>
+              <div class="news-item d-flex align-items-center column-gap-3">
+                <img
+                  src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1774&q=80"
+                  class="rounded"
+                  width="82px"
+                  alt=""
+                  srcset=""
+                />
+                <div class="news-desc">
+                  <h5>Bakti Masyarakat</h5>
+                  <p class="txt-gray1">12 Juni 2022</p>
+                </div>
+              </div>
+              <div class="news-item d-flex align-items-center column-gap-3">
+                <img src="/src/images/posts/camp.jpeg" class="rounded" height="70px" alt="" srcset="" />
+                <div class="news-desc">
+                  <h5>Bakti Masyarakat</h5>
+                  <p class="txt-gray1">12 Juni 2022</p>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+
+      <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div class="toast align-items-center text-bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true" id="copyToast">
+          <div class="d-flex">
+            <div class="toast-body"><p>Berhasil Menyalin Link.</p></div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container px-4 px-md-3">
+        <div class="row row-gap-4 justify-content-between">
+          <div class="col-md-4">
+            <img src="/src/images/logo-wide.svg" width="120px" />
+            <p class="text-white mt-3">Satukan Budaya Bangsa</p>
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63416.47709345438!2d110.63127296805919!3d-6.58086131478393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7118d34b9ae3ab%3A0x9d3067f98797ae0f!2sJepara%2C%20Jepara%20Regency%2C%20Central%20Java!5e0!3m2!1sen!2sid!4v1676528548009!5m2!1sen!2sid"
+              class="gmaps"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="col-md-7 d-flex flex-column-reverse flex-md-column row-gap-4">
+            <div class="d-flex flex-column flex-md-row footer-item-container">
+              <section class="footer-item">
+                <h4 class="text-white">Tentang Kami</h4>
+                <ul class="footer-list-item">
+                  <li><a href="">Kebijakan dan Privasi</a></li>
+                  <li><a href="">Kisah Sukses</a></li>
+                  <li><a href="">Syarat dan Ketentuan</a></li>
+                </ul>
+              </section>
+              <section class="footer-item">
+                <h4 class="text-white">Hubungi Kami</h4>
+                <ul class="footer-list-item">
+                  <li><a href="">curture@gmail.com</a></li>
+                  <li><a href="">+6277634589</a></li>
+                  <li><a href="">Syarat dan Ketentuan</a></li>
+                </ul>
+              </section>
+              <section class="footer-item">
+                <h4 class="text-white">Sosial Media</h4>
+                <ul class="d-flex footer-list-item gap-2">
+                  <button class="social-media facebook">
+                    <i class="fa fa-facebook"></i>
+                  </button>
+                  <button class="social-media instagram">
+                    <i class="fa fa-instagram"></i>
+                  </button>
+                  <button class="social-media twitter">
+                    <i class="fa fa-twitter"></i>
+                  </button>
+                </ul>
+              </section>
+            </div>
+
+            <div class="d-flex flex-column row-gap-3 flex-md-row justify-content-between join-now p-4 mt-5 rounded">
+              <section>
+                <h4 class="mb-0 text-white">Gabung Sekarang!</h4>
+                <p class="mb-0">Mari bergabung dengan kami</p>
+              </section>
+              <button class="button button-primary">Gabung!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="copyright py-4 mt-4">&copy; Muhammad Satria Herman 2023</section>
+    </footer>
+    <script src="/src/js/main.js"></script>
+    <script src="/src/js/utils/dark.js"></script>
+    <script src="https://kit.fontawesome.com/048ba41632.js" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const copyToast = document.getElementById("copyToast");
+      const copyToastBtn = document.getElementById("copyToastBtn");
+
+      function copy(content) {
+        navigator.clipboard.writeText(content);
+      }
+      if (copyToast) {
+        copyToastBtn.addEventListener("click", () => {
+          const toast = new bootstrap.Toast(copyToast);
+          const url = window.location.href;
+
+          copy(url);
+          toast.show();
+        });
+      }
+    </script>
+  </body>
+</html>
