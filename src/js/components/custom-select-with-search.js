@@ -3,6 +3,7 @@ const allSelectSearch = document.querySelectorAll(".custom-select-search");
 let selectIndex;
 const optionArr = [];
 
+// ketika user
 const optionListSearchClick = (opt, index, selectId = null, ulId = null) => {
   const select = document.querySelector(selectId);
   const customSelectElement = document.querySelector(".custom-select-list-box");
@@ -10,7 +11,6 @@ const optionListSearchClick = (opt, index, selectId = null, ulId = null) => {
 
   if (selectId !== null) {
     select.value = opt.textContent;
-    // select.parentElement.classList.add('d-none');
     if (ulId !== null) {
       ul.parentElement.classList.add("d-none");
     }

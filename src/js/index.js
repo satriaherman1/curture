@@ -43,7 +43,7 @@ setInterval(() => {
   b.start();
 }, 4000);
 // window.onload = function () {
-console.log("hi");
+
 AOS.init({
   duration: 650,
   once: true,

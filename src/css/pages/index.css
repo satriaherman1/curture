@@ -29,7 +29,6 @@ header h1 {
   /* animation: moveToLeft 9s linear infinite; */
 }
 
-.documentary,
 .statistic,
 .activity-box,
 #main .desc {
@@ -108,14 +107,48 @@ ul.activity-list li::after {
   margin: 9vh 0 0 0;
 }
 
-.join-community .join-community-box {
-  background-image: url("/src/images/join-us.jpeg");
+.join-community {
+  /* background-image: url("https://res.cloudinary.com/dbg3ckwtz/image/upload/v1678177041/Curture/decorator-join-us_b9ivtx.svg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center; */
+  background-color: var(--dark-box);
+  position: relative;
 
   padding: 60px 30px;
   color: white;
+}
+
+/* decorator */
+.join-community::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 39%;
+  background-image: url("https://res.cloudinary.com/dbg3ckwtz/image/upload/v1678177997/Curture/decorator-join-us-bg-dark_xetups.svg");
+  background-size: cover;
+
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.join-community::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  right: 0;
+  width: 30%;
+  height: 42%;
+  background-image: url("https://res.cloudinary.com/dbg3ckwtz/image/upload/v1678177934/Curture/decorator-join-us-bg2-dark_x1ksss.svg");
+  background-size: contain;
+
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.dark .join-community {
+  background-color: var(--dark2);
 }
 
 .join-community .join-community-box section:first-child {
@@ -123,11 +156,15 @@ ul.activity-list li::after {
 }
 
 /* feedback */
+.feedback-word {
+  margin-top: 70px;
+}
+
 .feedback {
   box-shadow: 0px 0px 30px rgba(175, 174, 174, 0.25);
   background-color: white;
   max-width: 500px;
-  margin: 50px 20px;
+  margin: 48px 20px 60px 20px;
   border-radius: 10px;
 }
 
@@ -159,7 +196,6 @@ ul.activity-list li::after {
   }
 
   .activity-box,
-  .documentary,
   .statistic,
   #main .desc {
     margin-top: 190px;
@@ -171,5 +207,36 @@ ul.activity-list li::after {
 
   .join-community {
     margin: 16vh 0;
+  }
+
+  .join-community::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 110px;
+    height: 120px;
+    background-image: url("https://res.cloudinary.com/dbg3ckwtz/image/upload/v1678176869/Curture/decorator-join-us_q6y2eo.svg");
+    background-size: contain;
+
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .join-community::after {
+    content: "";
+    position: absolute;
+
+    background-image: url("https://res.cloudinary.com/dbg3ckwtz/image/upload/v1678177257/Curture/decorator-join-us-2_znei9k.svg");
+    background-size: contain;
+    width: 110px;
+    height: 120px;
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  /* optimize button */
+  .join-community button {
+    margin-right: 20px;
   }
 }
