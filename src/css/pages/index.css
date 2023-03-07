@@ -216,7 +216,7 @@ ul.activity-list li::after {
     left: 0;
     width: 110px;
     height: 120px;
-    background-image: url("https://res.cloudinary.com/dbg3ckwtz/image/upload/v1678176869/Curture/decorator-join-us_q6y2eo.svg");
+
     background-size: contain;
 
     background-repeat: no-repeat;
@@ -226,7 +226,6 @@ ul.activity-list li::after {
     content: "";
     position: absolute;
 
-    background-image: url("https://res.cloudinary.com/dbg3ckwtz/image/upload/v1678177257/Curture/decorator-join-us-2_znei9k.svg");
     background-size: contain;
     width: 110px;
     height: 120px;
